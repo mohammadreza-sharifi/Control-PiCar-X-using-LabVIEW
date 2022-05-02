@@ -1,0 +1,64 @@
+[
+    {
+        "id": "40c6af4ce54c57e8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "195b785c397632c2",
+        "type": "pythonshell in",
+        "z": "40c6af4ce54c57e8",
+        "name": "",
+        "pyfile": "/home/pi/Desktop/picarxwithlabview/main.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 340,
+        "y": 60,
+        "wires": [
+            [
+                "93c8feccb471eef4"
+            ]
+        ]
+    },
+    {
+        "id": "93c8feccb471eef4",
+        "type": "debug",
+        "z": "40c6af4ce54c57e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d2b013106bd5ce15",
+        "type": "tcp in",
+        "z": "40c6af4ce54c57e8",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "2000",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "",
+        "topic": "text",
+        "base64": false,
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "195b785c397632c2"
+            ]
+        ]
+    }
+]
